@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Firm | Responsive Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="star-container">
+
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="animated-star">
+                <path d="M50 2 L60 45 L50 60 L40 45 Z" fill="red" transform="translate(0,0) rotate(0 50 50)" />
+                <path d="M50 2 L60 45 L50 60 L40 45 Z" fill="red" transform="translate(0,0) rotate(120 50 50)" />
+                <path d="M50 2 L60 45 L50 60 L40 45 Z" fill="red" transform="translate(0,0) rotate(240 50 50)" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- <div class="top-bar">
+        <div class="container">
+            <div class="contact-information">
+                <span>+91 8390545627</span>
+                <span>office@tgh.in</span>
+            </div>
+            <div class="social-media">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i><span
+                        class="social-name">Facebook</span></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i><span class="social-name">Twitter</span></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i><span
+                        class="social-name">LinkedIn</span></a>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Updated Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="IMAGE/CAFirmLogo.png" alt="Company Logo" class="logo-icon"></a>
+            </div>
+            <div class="Social-icon">
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i><span class="social-name"></span></a>
+            </div>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Firm Overview</a></li>
+                    <li class="dropdown">
+                        <a href="Service.html">What we Offer</a>
+                        <div class="dropdown-content">
+                            <div class="column">
+                                <a href="Service.html#service1"><i class="material-icons">fact_check</i>
+                                    <h4>Audit & Assurance Services</h4>
+                                </a>
+                                <p>Statutory Audits</p>
+                                <p>Internal Audits</p>
+                                <p>Concurrent Audits</p>
+                                <p>Due Diligence Audits</p>
+                                <p>Forensic Audits</p>
+                                <p>Regulatory Audits</p>
+                                <p>Risk-Based Audits</p>
+                                <p>Operations & Process Audits</p>
+                            </div>
+                            <div class="column">
+                                <a href="Service.html#service2"><i class="material-icons">assessment</i>
+                                    <h4>Management Assurance Services</h4>
+                                </a>
+                                <P>Migration Assistance</P>
+                                <P>Business Process Re-engineering</P>
+                                <P>Due Diligence Assignments</P>
+                                <P>Payroll Processing</P>
+                                <P>Controls and Monitoring of Inter-office Accounts</P>
+                                <P>Clearing and Reconciliation</P>
+                                <P>ESOP Administration & Consultancy</P>
+                            </div>
+                            <div class="column">
+                                <a href="Service.html#service3"><i class="material-icons">gavel</i>
+                                    <h4>Corporate Financial & Legal Advisory Services</h4>
+                                </a>
+                                <p>Financial Planning & Analysis</p>
+                                <p>Mergers & Acquisitions Advisory</p>
+                                <p>Legal Compliance</p>
+                                <p>Corporate Restructuring</p>
+                            </div>
+                            <div class="column">
+                                <a href="Service.html#service4"><i class="material-icons">request_quote</i>
+                                    <h4>Tax Advisory & Planning Services</h4>
+                                </a>
+                                <p>Direct Tax Advisory</p>
+                                <p>Indirect Tax Advisory</p>
+                            </div>
+                            <div class="column">
+                                <a href="Service.html#service5"><i class="material-icons">verified</i>
+                                    <h4>Tax Compliance Services</h4>
+                                </a>
+                                <p>Direct Tax Advisory</p>
+                                <p>Indirect Tax Advisory</p>
+                            </div>
+                            <div class="column">
+                                <a href="Service.html#service6"><i class="material-icons">support_agent</i>
+                                    <h4>Operational Consultancy</h4>
+                                </a>
+                                <p>Process Improvement</p>
+                                <p>Supply Chain Management</p>
+                                <p>Operational Risk Management</p>
+                            </div>
+                            <div class="column">
+                                <a href="Service.html#service7"><i class="material-icons">trending_up</i>
+                                    <h4>Financial Consulting</h4>
+                                </a>
+                                <p>Payroll Processing</p>
+                                <p>HR Management</p>
+                                <p>Employee Benefits Administration</p>
+                            </div>
+                            <div class="column">
+                                <a href="Service.html#service8"><i class="material-icons">verified_user</i>
+                                    <h4>Certification Services</h4>
+                                </a>
+                                <P>Tax Audit Certification</P>
+                                <P>Transfer Pricing Certification</P>
+                                <P>Tax Residency and Taxability Certification</P>
+                                <P>Tax Clearance Certificates</P>
+                                <P>Customs and Excise Certifications</P>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="AboutUS.html">Who we are</a></li>
+                    <li><a href="Carrer.html">Work with us</a></li>
+                    <li><a href="Contact.html">Let's connect</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i><span
+                                class="social-name"></span></a></li>
+                </ul>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- quick-connect -->
+    <div class="quick-connect">
+        <div class="quick-icon" id="quick-icon">
+            <span class="material-icons">arrow_back_ios</span>
+        </div>
+
+        <div class="quick-form" id="quick-form">
+            <h2>Contact Us</h2>
+            <form id="quick-form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Inquiry Message" rows="5"
+                        required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="services-layout">
+                <!-- Dropdown Toggle Button for Mobile -->
+                <button class="dropdown-toggle" onclick="toggleDropdown()">Our Services <i
+                        class="fa-solid fa-caret-down"></i></button>
+
+                <!-- Service List (Left Column) -->
+                <div class="services-list">
+                    <h2>Our Services</h2>
+                    <ul>
+                        <li><a href="#service1" onclick="closeDropdown()">Audit & Assurance Services</a></li>
+                        <li><a href="#service2" onclick="closeDropdown()">Management Assurance Services</a></li>
+                        <li><a href="#service3" onclick="closeDropdown()">Corporate Financial & Legal Advisory
+                                Services</a></li>
+                        <li><a href="#service4" onclick="closeDropdown()">Tax Advisory & Planning Services</a></li>
+                        <li><a href="#service5" onclick="closeDropdown()">Tax Compliance Services</a></li>
+                        <li><a href="#service6" onclick="closeDropdown()">Operational Consultancy</a></li>
+                        <li><a href="#service7" onclick="closeDropdown()">Financial Consulting</a></li>
+                        <li><a href="#service8" onclick="closeDropdown()">Certification Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Service Details (Right Column) -->
+                <div class="service-details">
+                    <div id="service1" class="service-item">
+                        <h2>Audit & Assurance Services</h2>
+                        <p><strong>Ensuring Accuracy, Compliance, and Transparency</strong></p>
+                        <p>Audit & Assurance Services form the cornerstone of our practice. At T.G. Hotchandani &
+                            Associates, we understand that reliable financial information is crucial for making informed
+                            business decisions. Our Audit & Assurance Services are designed to enhance the reliability
+                            of information prepared by our clients for use by investors, creditors, and other
+                            stakeholders.</p>
+                        <ul>
+                            <li><strong>Statutory Audits:</strong> Our statutory audit services ensure that your
+                                financial statements comply with all statutory and regulatory requirements. We work
+                                closely with you to provide assurance that your financial reporting is accurate and
+                                reliable.</li>
+                            <li><strong>Internal Audits:</strong> We conduct thorough evaluations of your organization’s
+                                internal controls, processes, and governance to ensure that your operations are running
+                                efficiently and effectively. Our internal audits help in identifying risks, enhancing
+                                operational efficiency, and improving governance.</li>
+                            <li><strong>Concurrent Audits:</strong> Our concurrent and stock audits are conducted
+                                in real-time to provide ongoing assurance regarding the accuracy of financial
+                                transactions and inventory management.</li>
+                            <li><strong>Tax Audits:</strong> Our tax audit services ensure that your business complies
+                                with all tax regulations, helping you to avoid penalties and optimize your tax
+                                liabilities.</li>
+                            <li><strong>Due Diligence Audits: </strong> These audits are conducted during mergers or
+                                acquisitions to assess a company's financial, operational, and legal health. They aim to
+                                identify potential risks, liabilities, and opportunities to help the buyer make informed
+                                decisions before completing the transaction.</li>
+                            <li><strong>Forensic Audits:</strong> Forensic audits involve detailed investigations to
+                                detect fraud, embezzlement, or other financial crimes. Auditors analyze financial
+                                records and transactions to gather evidence for legal proceedings.</li>
+                            <li><strong>Regulatory Audits:</strong> We conduct audits mandated by regulatory bodies such
+                                as the Reserve Bank of India (RBI), Securities and Exchange Board of India (SEBI),
+                                National Securities Depository Limited (NSDL), Central Depository Services Limited
+                                (CDSL), and National Payments Corporation of India (NPCI). These audits ensure
+                                compliance with specific regulatory frameworks.</li>
+                            <li><strong>Risk-Based Audits:</strong> Risk-based audits focus on identifying and
+                                evaluating key risks within an organization. Auditors prioritize areas with the highest
+                                risk of material misstatement or operational failure, ensuring that resources are
+                                directed toward the most critical areas.</li>
+                            <li><strong>Operations & Process Audits:</strong> We review and evaluate your business
+                                operations and processes to ensure they are optimized for efficiency and aligned with
+                                your strategic objectives.</li>
+                        </ul>
+                    </div>
+                    <div id="service2" class="service-item">
+                        <h2>Management Assurance Services</h2>
+                        <p><strong>Enhancing Business Processes and Strategic Planning</strong></p>
+                        <p>In today’s dynamic business environment, effective management is crucial to sustaining growth
+                            and ensuring long-term success. Our Management Assurance Services are designed to help
+                            organizations improve their processes, manage risks, and achieve their strategic objectives.
+                        </p>
+                        <ul>
+                            <li><strong>Migration Assistance & Reconciliation to Core Banking Systems:</strong> We
+                                assist financial institutions in migrating to new core banking systems and ensure that
+                                all transactions and accounts are accurately reconciled during the transition.</li>
+                            <li><strong>Business Process Re-engineering:</strong> We help organizations to redesign
+                                their business processes to achieve significant improvements in critical areas such as
+                                cost, quality, service, and speed.</li>
+                            <li><strong>Due Diligence Assignments:</strong> Our due diligence services provide a
+                                thorough assessment of potential investments, mergers, and acquisitions, helping you
+                                make informed decisions.</li>
+                            <li><strong>Payroll Processing & Vendor Payment Processing:</strong> We offer comprehensive
+                                payroll processing services, ensuring that your employees are paid accurately and on
+                                time. Additionally, we manage vendor payments to ensure smooth business operations.</li>
+                            <li><strong>Controls and Monitoring of Inter-office Accounts:</strong> We implement controls
+                                and monitor inter-office accounts to ensure accuracy and compliance across multiple
+                                locations or branches.</li>
+                            <li><strong>Clearing and Reconciliation:</strong> Our services include the reconciliation of
+                                clearing accounts, pay orders, demand drafts, and ATM transactions to ensure accuracy
+                                and prevent discrepancies.</li>
+                            <li><strong>ESOP Administration & Consultancy:</strong> We offer expert advice and
+                                administration services for Employee Stock Ownership Plans (ESOPs), helping you to
+                                manage and maximize the benefits of these programs.</li>
+                        </ul>
+                    </div>
+                    <div id="service3" class="service-item">
+                        <h2>Corporate Financial & Legal Advisory Services</h2>
+                        <p><strong>Strategic Financial Planning and Legal Compliance</strong></p>
+                        <p>Navigating the complex landscape of corporate finance and legal regulations requires expert
+                            guidance. Our Corporate Financial & Legal Advisory Services provide businesses with the
+                            insights and strategies needed to manage financial risks, optimize capital structure, and
+                            comply with legal requirements.</p>
+                        <ul>
+                            <li><strong>Financial Planning & Analysis:</strong> We assist businesses in developing
+                                comprehensive financial plans that align with their strategic goals. Our analysis helps
+                                in optimizing financial performance and making informed business decisions.</li>
+                            <li><strong>Mergers & Acquisitions Advisory:</strong> We provide expert advice on mergers,
+                                acquisitions, and divestitures, helping you to maximize value and achieve strategic
+                                growth.</li>
+                            <li><strong>Legal Compliance:</strong> Our legal advisory services ensure that your business
+                                complies with all relevant laws and regulations, minimizing legal risks and ensuring
+                                smooth operations.</li>
+                            <li><strong>Corporate Restructuring:</strong> We assist in corporate restructuring
+                                activities, including debt restructuring, capital restructuring, and business turnaround
+                                strategies.</li>
+                        </ul>
+                    </div>
+                    <div id="service4" class="service-item">
+                        <h2>Tax Advisory & Planning Services / Tax Efficiency & Planning Solutions (Direct & Indirect)
+                        </h2>
+                        <p>Tax advisory and planning services are crucial for individuals and businesses to ensure they
+                            comply with tax laws while minimizing their tax liability. These services help clients
+                            navigate the complexities of tax regulations and develop strategies to optimize their tax
+                            position, both in the short and long term.</p>
+                        <p><strong>Direct Tax Advisory:</strong></p>
+                        <p>Direct taxes are taxes levied directly on an individual or entity, including income tax,
+                            corporate tax, and capital gains tax. Tax advisory services in this domain include:</p>
+                        <ul>
+                            <li><strong>Tax Planning:</strong> Structuring income, investments, and expenses in ways
+                                that reduce taxable income while complying with tax laws.</li>
+                            <li><strong>Corporate Tax Optimization:</strong> Helping businesses identify tax incentives,
+                                credits, and deductions available to reduce their corporate tax liability.</li>
+                            <li><strong>Cross-Border Taxation:</strong> For companies and individuals with international
+                                dealings, advisory services help mitigate issues arising from double taxation and ensure
+                                compliance with international tax treaties.</li>
+                            <li><strong>Estate and Succession Planning:</strong> Structuring assets and wealth in a
+                                tax-efficient way, ensuring that inheritance taxes are minimized and wealth is smoothly
+                                transferred across generations.</li>
+                        </ul>
+
+                        <p><strong><br>Indirect Tax Advisory:</strong></p>
+                        <p>Indirect taxes are taxes on goods and services, such as VAT, sales tax, excise duties, and
+                            customs duties. Tax advisory in this area includes:</p>
+                        <ul>
+                            <li><strong>VAT/GST Compliance:</strong> Advising businesses on the correct application of
+                                VAT/GST rules, claiming credits, and minimizing liabilities.</li>
+                            <li><strong>Supply Chain Tax Optimization:</strong> Ensuring that businesses structure their
+                                supply chains in a way that minimizes indirect tax costs, such as sales tax or customs
+                                duties.</li>
+                            <li><strong>Tax on International Trade:</strong> Providing guidance on the customs duties
+                                and taxes associated with importing and exporting goods.</li>
+                            <li><strong>Indirect Tax Audits and Disputes:</strong> Offering solutions to audit issues,
+                                tax assessments, or disputes with tax authorities to avoid penalties.</li>
+                        </ul>
+                    </div>
+                    <div id="service5" class="service-item">
+                        <h2>Tax Compliance Services (Direct & Indirect)</h2>
+                        <p>Tax compliance is the process of ensuring that an individual or business adheres to tax laws,
+                            regulations, and reporting requirements. This involves accurately preparing and submitting
+                            tax returns, paying due taxes on time, and maintaining necessary records to avoid penalties
+                            or audits.</p>
+                        <p><strong>Direct Tax Compliance:</strong></p>
+                        <p>For direct taxes, tax compliance services ensure businesses and individuals meet their
+                            obligations related to:</p>
+                        <ul>
+                            <li><strong>Income Tax Returns:</strong> Preparing and filing accurate income tax returns
+                                for individuals, businesses, and corporations.</li>
+                            <li><strong>Corporate Tax Returns: </strong> Ensuring that companies comply with corporate
+                                tax laws, including calculations for taxable income, tax deductions, and credits.</li>
+                            <li><strong>Capital Gains and Other Direct Taxes:</strong> Assistance with compliance
+                                regarding capital gains taxes, inheritance taxes, or any other direct taxation
+                                obligations.</li>
+                            <li><strong>Withholding Tax:</strong> Ensuring businesses correctly withhold taxes from
+                                employee salaries, dividends, and interest payments and remit them to the tax
+                                authorities.</li>
+                        </ul>
+
+                        <p><strong><br>Indirect Tax Compliance:</strong></p>
+                        <p>Indirect tax compliance services focus on ensuring that businesses adhere to VAT/GST laws,
+                            excise duties, and other transactional taxes:</p>
+                        <ul>
+                            <li><strong>VAT/GST Returns:</strong> Preparing and filing VAT/GST returns accurately,
+                                ensuring businesses claim input tax credits and meet their VAT/GST obligations.</li>
+                            <li><strong>Customs Duties and Excise Taxes:</strong> Ensuring businesses comply with
+                                customs duties, excise tax filings, and import/export regulations.</li>
+                            <li><strong>Sales and Service Tax:</strong> Assisting businesses in complying with sales and
+                                service tax requirements, including returns, payment, and record maintenance.</li>
+                            <li><strong>Indirect Tax Audits and Appeals:</strong> Helping businesses resolve disputes
+                                with tax authorities regarding indirect taxes, including handling audits or filing
+                                appeals if necessary.</li>
+                        </ul>
+                    </div>
+                    <div id="service6" class="service-item">
+                        <h2>Operational Consultancy</h2>
+                        <p><strong>Optimizing Business Operations for Success</strong></p>
+                        <p>Operational efficiency is key to business success, and our Operational Consultancy services
+                            are designed to help businesses streamline their operations, reduce costs, and improve
+                            performance.</p>
+                        <ul>
+                            <li><strong>Process Improvement:</strong> We help businesses identify inefficiencies in
+                                their processes and implement improvements that lead to better performance and lower
+                                costs.</li>
+                            <li><strong>Supply Chain Management:</strong> Our supply chain management services help
+                                businesses optimize their supply chain operations, ensuring timely delivery of products
+                                and services.</li>
+                            <li><strong>Operational Risk Management:</strong> We provide expert guidance on identifying
+                                and managing operational risks, helping businesses to avoid disruptions and maintain
+                                continuity.</li>
+                        </ul>
+                    </div>
+                    <div id="service7" class="service-item">
+                        <h2>HR & Payroll Operation Solutions</h2>
+                        <p><strong>Streamlining HR Processes and Payroll Management</strong></p>
+                        <p>Managing human resources effectively is critical to the success of any organization. Our HR &
+                            Payroll Operation Solutions are designed to help businesses streamline their HR processes
+                            and manage payroll efficiently.</p>
+                        <ul>
+                            <li><strong>Payroll Processing:</strong> We offer comprehensive payroll processing services,
+                                ensuring accurate and timely payment of employees’ salaries and benefits.</li>
+                            <li><strong>HR Management:</strong> Our HR management services include recruitment,
+                                performance management, employee engagement, and compliance with labor laws.</li>
+                            <li><strong>Employee Benefits Administration:</strong> We assist businesses in managing
+                                employee benefits, including health insurance, retirement plans, and other perks.</li>
+                        </ul>
+                    </div>
+                    <div id="service8" class="service-item">
+                        <h2>Certification Services</h2>
+                        <p><strong>Streamlining HR Processes and Payroll Management</strong></p>
+                        <p>Certification services in the context of taxation and business operations refer to the formal
+                            process of validating and confirming the accuracy, legality, and authenticity of various
+                            financial statements, documents, and transactions. These services provide assurance that
+                            financial reports and business practices are in compliance with relevant laws, regulations,
+                            and standards.</p>
+                        <ul>
+                            <li><strong>Tax Audit Certification:</strong> A certified public accountant or tax
+                                professional reviews a company’s financial statements and tax filings to ensure accuracy
+                                and compliance with applicable tax laws. This is required by tax authorities in many
+                                jurisdictions, particularly for large companies or those subject to specific regulatory
+                                requirements.</li>
+                            <li><strong>Transfer Pricing Certification: </strong> Businesses engaged in international
+                                trade must ensure their intercompany transactions adhere to transfer pricing
+                                regulations. Certification services validate that the pricing of goods and services sold
+                                between subsidiaries complies with the arm's length principle, reducing the risk of
+                                penalties or disputes.</li>
+                            <li><strong>Tax Residency and Taxability Certification:</strong> For businesses and
+                                individuals engaged in cross-border transactions, certification services help determine
+                                tax residency status and ensure compliance with local and international tax laws to
+                                avoid double taxation.</li>
+                            <li><strong>Certificate of No Objection/Tax Clearance Certificates: </strong> These
+                                certificates confirm that a business or individual has complied with all relevant tax
+                                obligations. They are often required in business dealings, mergers, or while securing
+                                financing.</li>
+                            <li><strong>Customs and Excise Certifications: </strong> For businesses involved in
+                                importing or exporting goods, certification services ensure compliance with customs
+                                duties, excise taxes, and related regulations.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <a href="index.html"><img src="IMAGE/CAFirmLogo.png" alt="CA Firm Logo" /></a>
+            </div>
+
+            <!-- Content Sections -->
+            <div class="footer-content">
+                <!-- Header Name Section -->
+                <div class="footer-section header-name">
+                    <h3>&nbsp;</h3>
+                    <ul>
+                        <li><a href="index.html">Firm Overview</a></li>
+                        <li><a href="Service.html">what we offer</a></li>
+                        <li><a href="AboutUS.html">Who we are</a></li>
+                        <li><a href="Carrer.html">Work with us</a></li>
+                        <li><a href="Contact.html">Let's Connect</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Section -->
+                <div class="footer-section services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="Service.html#service1">Audit & Assurance</a></li>
+                        <li><a href="Service.html#service2">Management Assurance Services</a></li>
+                        <li><a href="Service.html#service3">Corporate Financial & Legal Advisory Services</a></li>
+                        <li><a href="Service.html#service4">Tax Advisory & Planning Services</a></li>
+                        <li><a href="Service.html#service5">Tax Compliance Services</a></li>
+                        <li><a href="Service.html#service6">Operational Consultancy</a></li>
+                        <li><a href="Service.html#service7">Financial Consulting</a></li>
+                        <li><a href="Service.html#service8">Certification Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Map Section -->
+                <div class="footer-section contact-map">
+                    <h3>&nbsp;</h3>
+                    <p><i class="material-icons">location_on</i> 901, ISHAN ARCADE II GOKHALE ROAD,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OPP. HANUMANJI TEMPLE,
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NAUPADA, THANE,
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maharashtra, India - 400602
+                    </p>
+                    <p><i class="material-icons">phone</i> +91 8390545627</p>
+                    <p><i class="material-icons">email</i> office@tgh.in</p>
+                    <p><br><br>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connect
+                        with Us</p>
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.instagram.com/tgh.official_/?igsh=MWViM3l1Z2RnMWc1ZA%3D%3D"><i
+                                class="fab fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </p>
+                </div>
+                <div class="footer-section map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1884.0860319372057!2d72.97254622922462!3d19.18768567704415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b92094e0c8cf%3A0xbc183e2a522868af!2sIshan%20Arcade%2C%20Gokhale%20Rd%2C%20Shivaji%20Path%2C%20Dada%20Patil%20Wadi%2C%20Shivaji%20Nagar%2C%20Thane%20West%2C%20Thane%2C%20Maharashtra%20400602!5e0!3m2!1sen!2sin!4v1726832390907!5m2!1sen!2sin"
+                        width="100%" height="100%" frameborder="0" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 CA Firm. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

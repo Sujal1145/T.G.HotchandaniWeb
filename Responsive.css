@@ -1,0 +1,561 @@
+/*========================================= Top-Bar====================================== */
+@media (max-width: 768px) {
+  .top-bar .social-media {
+    flex-direction: row;
+    /* Stack social media icons vertically */
+  }
+
+  .top-bar .social-media a {
+    margin: 5px 0;
+    /* Add vertical margin between icons */
+  }
+
+  .top-bar .social-media a .social-name {
+    display: none;
+    /* Hide social media names */
+  }
+
+  .top-bar .social-media a i {
+    font-size: 18px;
+    /* Adjust icon size */
+  }
+
+  .top-bar .contact-information span {
+    font-size: 13px;
+  }
+}
+
+/* ========================================header========================================== */
+@media (max-width: 768px) {
+  header .container {
+    flex-wrap: wrap;
+  }
+
+
+  .logo-icon {
+    width: 200px;
+    height: auto;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    position: fixed;
+    top: 100px;
+    /* Adjust based on header height */
+    right: -100%;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 92%;
+    justify-content: flex-start;
+    padding-top: 20px;
+    transition: right 0.3s ease;
+  }
+
+  header nav ul li a {
+    color: black;
+  }
+
+  header nav ul.show {
+    right: 0;
+  }
+
+  header nav ul li {
+    margin: 2px 0;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .menu-icon i{
+    color: white;
+  }
+
+  .Social-icon{
+    display: block;
+  }
+  .Social-icon a{
+    color: white;
+  }
+}
+
+/* ============================================Home Section====================================== */
+/* Comapany Summary */
+@media (max-width: 1200px) {
+  #home .home-content h2 {
+    font-size: 2.5rem;
+  }
+
+  #home .home-content p {
+    font-size: 1.25rem;
+  }
+
+  .summary-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .summary-text,
+  .summary-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .summary-image img {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    height: 80vh;
+    padding: 15px;
+  }
+
+  #home .home-content h2 {
+    font-size: 2rem;
+  }
+
+  #home .home-content p {
+    font-size: 1.1rem;
+  }
+
+  #company-summary h2 {
+    font-size: 2rem;
+  }
+
+  .summary-text {
+    font-size: 1rem;
+  }
+
+  .summary-content a {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #home {
+    height: 70vh;
+  }
+
+  #home .home-content h2 {
+    font-size: 1.8rem;
+  }
+
+  #home .home-content p {
+    font-size: 1rem;
+  }
+
+  #company-summary h2 {
+    font-size: 1.8rem;
+  }
+
+  .summary-content a {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Goal Summmary */
+@media (max-width: 1024px) {
+  .goal {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .goal {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #goals-summary h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .goal {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #goals-summary h2 {
+    font-size: 1.8rem;
+  }
+
+  .goal h3 {
+    font-size: 1.5rem;
+  }
+
+  .goal p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Get in Touch */
+@media (max-width: 940px) {
+  .get-in-touch-content {
+    flex-direction: column;
+    /* Stack elements */
+  }
+
+  .company-details {
+    width: 100%;
+    /* Full width on smaller screens */
+  }
+
+  #get-in-touch h2 {
+    font-size: 2rem;
+    /* Adjust font size for smaller screens */
+  }
+
+  .company-details h3 {
+    font-size: 1.5rem;
+    /* Smaller heading size */
+  }
+}
+
+/* ========================================Service Section======================================= */
+
+/* Media Queries for mobile devices */
+@media (max-width: 768px) {
+  .services-list {
+    top: 20%;
+    text-align: center;
+  }
+
+  .services-list h2 {
+    font-size: 0;
+    margin-bottom: 70px;
+  }
+
+  .services-layout {
+    flex-direction: column;
+  }
+
+  /* Initially hide the services list */
+  .services-list {
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    width: auto;
+    transition: max-height 0.5s ease-out;
+    /* Smooth transition effect */
+  }
+
+  .service-details {
+    padding: 10% 0;
+    width: 100%;
+  }
+
+  /* Sticky dropdown button on mobile */
+  .dropdown-toggle {
+    display: block;
+    /* position:static; */
+    top: 5%;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    color: rgb(235, 9, 9);
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    z-index: 98;
+    margin-bottom: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Expanded services list */
+  .show-dropdown {
+    max-height: 500px;
+    /* Adjust this value based on the height of the content */
+    transition: max-height 0.5s ease-in;
+    /* Smooth slide-down effect */
+  }
+}
+
+/* =========================================About Section========================================= */
+
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  body {
+    padding-top: 30%;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content .image {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .content .text {
+    order: 2;
+  }
+
+  section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  section p,
+  section ul.goals-list li {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .content .image img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Responsive Design for Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content .image {
+    margin-bottom: 20px;
+  }
+
+  section h2 {
+    font-size: 30px;
+  }
+
+  section p,
+  section ul.goals-list li {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .content .image img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form,
+  .contact-info {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .contact-info {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .contact-form label,
+  .contact-info h3,
+  .contact-info p {
+    font-size: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form .btn {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
+
+
+
+/* -------------------------------------------------footer----------------------------------------- */
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .header-name, .services, .contact-map, .map-container {
+    flex: 100%; /* Make sections full width */
+    text-align: center; /* Center text */
+  }
+
+  .map-container {
+    height: 300px; /* Set a fixed height for the map */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-logo img {
+    max-width: 300px; /* Reduce logo size */
+  }
+
+  .footer-section h3 {
+    font-size: 16px; /* Reduce header font size */
+  }
+
+  .footer-section p,
+  .footer-section ul {
+    font-size: 12px; /* Reduce text size */
+  }
+
+  .contact-map, .fab {
+    font-size: 24px; /* Reduce icon size */
+  }
+
+  .footer-bottom {
+    font-size: 12px; /* Reduce footer bottom text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    padding: 20px 0; /* Add padding for small screens */
+  }
+
+  .footer-section ul li {
+    margin-bottom: 5px; /* Reduce margin for list items */
+  }
+
+  .footer-section ul li a {
+    font-size: 12px; /* Reduce link font size */
+  }
+
+  .contact-map p {
+    font-size: 10px; /* Reduce contact details font size */
+  }
+
+  .map-container {
+    height: 200px; /* Further reduce map height */
+  }
+}
+
+
+
+/* -------------------------------------------------contact Branches-------------------------------- */
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .cont-goal {
+    flex: 1 1 calc(33% - 20px);
+    /* Ensures 3 items per row */
+  }
+
+  #Branches h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cont-goal {
+    flex: 1 1 calc(50% - 20px);
+    /* Ensures 2 items per row */
+  }
+
+  #Branches h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cont-goal {
+    flex: 1 1 100%;
+    /* Ensures 1 item per row */
+  }
+
+  #Branches h2 {
+    font-size: 1.6rem;
+  }
+
+  .cont-goal h3 {
+    font-size: 1.2rem;
+  }
+
+  .cont-goal p {
+    font-size: 13px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #goals-summary .goals-content {
+    flex-direction: column; /* Stack the goals vertically */
+    align-items: center; /* Center align the goals */
+  }
+
+  #goals-summary .goal {
+    width: 80%; /* Make each goal take up most of the width */
+    margin-bottom: 20px; /* Add space between goals */
+  }
+
+  #goals-summary h2 {
+    font-size: 2rem; /* Slightly smaller heading */
+  }
+
+  #goals-summary .goal a i {
+    font-size: 30px; /* Decrease icon size */
+  }
+
+  #goals-summary .goal h3 {
+    font-size: 1.2rem; /* Smaller font size for names */
+  }
+}
+
+@media (max-width: 480px) {
+  #goals-summary h2 {
+    font-size: 1.8rem; /* Further decrease heading size */
+  }
+
+  #goals-summary .goal a i {
+    font-size: 25px; /* Further decrease icon size */
+  }
+
+  #goals-summary .goal h3 {
+    font-size: 1rem; /* Further decrease font size for names */
+  }
+
+  #goals-summary .goal {
+    padding: 15px; /* Reduce padding in goals */
+  }
+}
